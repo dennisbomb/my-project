@@ -1,0 +1,29 @@
+name: Run Tests - CI
+
+# Trigger on every commit push
+on:
+  push:
+    branches:
+      - main
+      - '**'  # Optional: run on all branches
+  pull_request:  # Also run on PRs
+    branches:
+      - main
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Make sure test script is executable
+      - name: Make test script executable
+        run: chmod +x ./test.sh
+
+      # Step 3: Run the test script
+      - name: Run tests
+        run: ./test.sh
