@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-name: Run Tests - CI
+name: Run Tests
 =======
 name: Run Tests
 >>>>>>> f591bf9 (Add GitHub Actions workflow to run tests)
