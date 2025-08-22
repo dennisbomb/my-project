@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Run Tests - CI
+=======
+name: Run Tests
+>>>>>>> f591bf9 (Add GitHub Actions workflow to run tests)
 
 # Trigger on every commit push
 on:
@@ -27,3 +31,7 @@ jobs:
       # Step 3: Run the test script
       - name: Run tests
         run: ./test.sh
+<<<<<<< HEAD
+=======
+
+>>>>>>> f591bf9 (Add GitHub Actions workflow to run tests)
